@@ -26,7 +26,7 @@ nav.active {
   transition: 0.6s ease-in-out;
 }
 
-.img_finance{
+.img_finance {
   width: 20%;
   height: auto;
 }
@@ -41,7 +41,7 @@ nav ul {
   transition: all ease 0.2s;
 }
 .active:hover {
-  background-color: #000000;
+  background-color: whitesmoke;
   color: #ffffff;
   box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
   transition: all ease 0.2s;
@@ -82,11 +82,13 @@ nav .menu-btn,
     position: absolute;
     top: 0;
     left: -100%;
-    opacity: 0;
     align-items: stretch;
     padding: 80px 0 30px 0;
     margin: 0;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: visibility 0s, opacity 0.3s 0.3s, transform 0.3s ease-in-out;
     border-radius: 13px;
   }
 
@@ -95,9 +97,11 @@ nav .menu-btn,
     left: 0px;
     top: 1px;
     height: 70vh;
+    visibility: visible;
     opacity: 1;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in-out;
     z-index: -1;
-    transition: 0.3s ease-in-out;
   }
 
   .menu li {
@@ -134,7 +138,7 @@ nav .menu-btn,
     top: 65px;
     left: 0px;
     background-color: #ffffff;
-    border-bottom: 4px solid #ff1414;
+    border-bottom: 4px solid #fff491;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -153,7 +157,7 @@ nav .menu-btn,
     margin-top: 49px;
   }
   nav .menu-icons {
-  display: flex;
+    display: flex;
   }
   nav .menu-icon .nav-icon {
     background-color: #ffffff;

@@ -86,3 +86,38 @@
     color: #ffffff;
     border: 2px solid #ff1414;
   }
+
+  @media (max-width: 970px) {
+    #main {
+      height: 680px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #main {
+      background-position: center;
+    }
+  
+    .a-container {
+      flex-wrap: wrap;
+    }
+  
+    .a-box{
+      width: 100%;
+      height: 400px;
+  }
+  
+    .header-heading {
+      width: 60%;
+    }
+  
+    .header-heading h1 {
+      font-size: 2.2rem;
+    }
+    .pr-heading {
+      width: 60%;
+    }
+    #presentaion {
+      background-position: center;
+    }
+  }
