@@ -6,7 +6,6 @@ import { ThemeContext } from "../../context";
 import "./contact.css";
 
 const Contact = () => {
-
   const form = useRef();
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
@@ -15,14 +14,13 @@ const Contact = () => {
   const [project, setProject] = useState("");
   const [phoneNo, setPhoneNo] = useState("");
 
-  
   const sendEmail = (e) => {
     e.preventDefault();
 
     if (!name) {
       const customId = "Llene todos los campos!";
 
-      toast("Llene todos los campos!",{
+      toast("Llene todos los campos!", {
         toastId: customId,
         position: toast.POSITION.TOP_CENTER,
       });
@@ -38,7 +36,7 @@ const Contact = () => {
     });
     e.target.reset();
   };
-  
+
   return (
     <section className="contact section" id="contact">
       <ToastContainer />
@@ -62,7 +60,7 @@ const Contact = () => {
                 style={{ color: darkMode && "rgb(34, 34, 34)" }}
                 className="contact__card-data"
               >
-                email@gmail.com
+                Avaloscarlos@estudiocea.com.ar
               </span>
 
               <a
@@ -77,14 +75,14 @@ const Contact = () => {
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-whatsapp contact__card-icon"></i>
+              <i className="bx bx-mail-send contact__card-icon"></i>
 
-              <h3 className="contact__card-title">Whatsapp</h3>
+              <h3 className="contact__card-title">Email</h3>
               <span
                 style={{ color: darkMode && "rgb(34, 34, 34)" }}
                 className="contact__card-data"
               >
-                112335-9620
+                Fernandez.walter@estudiocea.com.ar
               </span>
 
               <a
@@ -99,14 +97,14 @@ const Contact = () => {
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-discord-alt contact__card-icon"></i>
+              <i className="bx bx-mail-send contact__card-icon"></i>
 
-              <h3 className="contact__card-title">Discord</h3>
+              <h3 className="contact__card-title">Email</h3>
               <span
                 style={{ color: darkMode && "rgb(34, 34, 34)" }}
                 className="contact__card-data"
               >
-                discord
+                 Olivera.raul@estudiocea.com.ar
               </span>
 
               <a

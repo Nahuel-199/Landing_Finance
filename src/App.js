@@ -8,6 +8,8 @@ import Parallax from './components/parallax/Parallax';
 import Planes from './components/planes/Planes';
 import ScrollUp from './components/scrollup/ScrollUp';
 import "./App.css";
+import Mision from './components/mision/Mision';
+import Nosotros from './components/nosotros/Nosotros';
 
 function App() {
 
@@ -18,7 +20,9 @@ function App() {
       <Header />
     <About />
     <Parallax />
+    <Mision />
     <Planes />
+    <Nosotros />
     <Contact />
     </main>
     <Footer />

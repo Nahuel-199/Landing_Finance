@@ -5,13 +5,13 @@ const Header = () => {
   return (
     <div id="main">
         <div className="header-heading">
-            <h2>EXPERIENCIA</h2>
-            <h1><span>SERIEDAD</span></h1>
+            <h2>SERIEDAD</h2>
+            <h1><span>EXPERIENCIA</span></h1>
             <p className="details">
                SÓLIDOS CONOCIMIENTOS TÉCNICOS
             </p>
             <p className="details">
-            Al final del día, lo importante es estar bien asesorado.
+            Acompañando al cliente en el desarrollo de su actividad, brindando la mejor calidad de servicio
             </p>
            
         </div>

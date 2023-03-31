@@ -11,26 +11,26 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <h2 style={{ color: darkMode && "#fff" }} className="section__title">
-        La celeridad en las respuestas y la presencia en la empresa, hacen
-        nuestra diferencia.
+        Nuestra Visión.
       </h2>
       <span className="section__subtitle">
-        Creemos que la atención permanente de Socios es un elemento diferencial
-        que nos permite sentirnos parte integrante del equipo de trabajo de
-        nuestros clientes.
+        En un contexto cambiante en el que la intervención del estado a través
+        de su organismo recaudador y en su necesidad de financiamiento mediante
+        la aplicación de tributos, vemos la importancia de estar asesorado al
+        desarrollar una actividad ya que la misma involucra inversión de
+        capital, trabajo y análisis de distintas variables, que permitirán tomar
+        decisiones apuntando a maximizar los recursos de la empresa, además de
+        podes reducir el impacto impositivo
       </span>
       <div className="about__container container grid">
-        <img src={mq} alt="about" className="img_finance2"/>
+        <img src={mq} alt="about" className="img_finance2" />
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Ofrecemos a nuestros clientes una amplia gama de servicios
-            financieros para ayudarlos a alcanzar sus objetivos. Estamos
-            comprometidos a proporcionar asesoramiento de calidad, ofreciendo
-            soluciones integradas para nuestros clientes. Nuestros servicios
-            incluyen asesoramiento financiero, planificación financiera,
-            análisis de inversiones, evaluación de riesgos, y estrategias de
-            inversión.
+            Creemos que el asesoramiento al cliente como también su compromiso
+            en adquirir nuevos conocimientos ayudan a mejorar la dinámica de la
+            actividad desarrollada y a una mejor comunicación cliente –
+            contador.
           </p>
         </div>
       </div>

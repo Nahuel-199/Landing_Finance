@@ -118,11 +118,24 @@
     background-color:#ffeb14;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
   }
+
+  .text_parallax{
+    color: white;
+    margin-top: 20px;
+  }
   
 
   @media screen and (max-width: 768px) {
   .py-5 {
     margin-left: -10px;
+  }
+
+  .mt-3{
+    margin-left: 0px;
+  }
+
+  .button2{
+    margin-left: 0px;
   }
 
 }

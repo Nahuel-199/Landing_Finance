@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from "../../assets/logoFinance.png";
+import logo from "../../assets/logoHeader2.png";
 import { Link } from "react-scroll";
 import "./navbar.css"
 
@@ -15,6 +15,7 @@ const Navbar = () => {
         <Link to="main" className="logo"  smooth={true} duration={2000}>
             <img src={logo} alt="logo" className='img_finance'/>
         </Link>
+        <span className='span_logo'>ESTUDIOCEA conocimiento y experiencia aplicada</span>
         <div className="menu-icons" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"} style={{color: "gray"}}></i>
       </div>

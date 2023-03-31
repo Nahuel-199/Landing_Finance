@@ -6,22 +6,23 @@ export const Data = [
   {
     id: 1,
     image: Image1,
-    title: "NUESTROS SERVICIOS",
+    title: "AFIP",
     description:
-      "Asesoramiento tributario en el orden nacional, provincial y municipal. Planificación tributaria a los efectos de una correcta incidencia (tax planning). Planificación tributaria internacional.",
+      "Inscripciones y baja de impuestos, Monotributo, Régimen General (IVA), Liquidación de impuestos mensuales y anuales, Impuestos Provinciales, Certificaciones contables.",
   },
   {
     id: 2,
-    image: Image2,
-    title: "QUIENES SOMOS",
+    image: Image3,
+    title: "+AFIP",
     description:
-      "CIRULLI & ZAMBRANO y Asociados es una firma nacional, cuyos Socios desarrollaron su carrera profesional durante más de 15 años años en Estudios denominados Big Four y en Estudios boutique de plaza",
+      "Recategorización de monotributo, Regularizaciones Impositivas, Regimenes de Información, Respuesta a requerimientos, Moratorias y planes de pagos afip.",
   },
   {
     id: 3,
-    image: Image3,
-    title: "CLIENTES Y MISIÓN",
+    image: Image2,
+    title: "COMERCIO EXTERIOR",
     description:
-      "Conozca los valores que nos impulsan y la misión profesional que asumimos con cada uno de nuestros clientes al buscar el mejor funcionamiento y eficiencia en la rentabilidad",
+      "Despachos Aduaneros, Importación - exportación e inscripciones, Asesoramiento en documentos aduaneros, TAD- tramites a distancia, Recupero derechos exportación y mucho más.",
   },
+
 ];

@@ -11,7 +11,7 @@ const Planes = () => {
   return (
     <section id="planes">
       <h2 style={{ color: darkMode && "#fff" }} className="section__title">
-        Conoce un poco mas sobre nosotros
+        Nuestros servicios
       </h2>
       <div className="products">
         {Data &&
