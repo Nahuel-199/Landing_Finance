@@ -40,20 +40,20 @@ const Contact = () => {
   return (
     <section className="contact section" id="contact">
       <ToastContainer />
-      <h2 style={{ color: darkMode && "#fff" }} className="section__title">
-        Ponerse en contacto
+      <h2 style={{ color: "#fff" }} className="section__title">
+      Contáctese con nosotros
       </h2>
-      <span className="section__subtitle">Contáctanos</span>
+      <span className="section__subtitle"></span>
 
       <div className="contact__container container grid">
         <div className="contact_content">
-          <h3 style={{ color: darkMode && "#fff" }} className="contact__title">
+          <h3 style={{ color: "#fff" }} className="contact__title">
             Háblenos
           </h3>
 
           <div className="contact__info">
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
+              <i className="bx bx-mail-send contact__card-icon" style={{color: "red"}}></i>
 
               <h3 className="contact__card-title">Email</h3>
               <span
@@ -75,7 +75,7 @@ const Contact = () => {
             </div>
 
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
+              <i className="bx bx-mail-send contact__card-icon" style={{color: "red"}}></i>
 
               <h3 className="contact__card-title">Email</h3>
               <span
@@ -97,7 +97,7 @@ const Contact = () => {
             </div>
 
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
+              <i className="bx bx-mail-send contact__card-icon" style={{color: "red"}}></i>
 
               <h3 className="contact__card-title">Email</h3>
               <span
@@ -121,7 +121,7 @@ const Contact = () => {
         </div>
 
         <div className="contact__content">
-          <h3 style={{ color: darkMode && "#fff" }} className="contact__title">
+          <h3 style={{ color: "#fff" }} className="contact__title">
             Escríba su consulta
           </h3>
 
@@ -179,7 +179,7 @@ const Contact = () => {
                 style={{
                   border: darkMode && " 2px solid rgb(255 255 255 / 79%)",
                 }}
-                type="number"
+                type="text"
                 name="phoneNo"
                 value={phoneNo}
                 onChange={(e) => setPhoneNo(e.target.value)}
@@ -211,7 +211,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className="button button--flex">
+            <button className="button button--flex" style={{ background: "hsl(217.88deg 92.75% 62.16%)"}}>
               Enviar mensaje
               <svg
                 class="button__icon"

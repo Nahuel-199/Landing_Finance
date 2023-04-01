@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-scroll";
+
 
 const PlanesCard = ({ product }) => { 
   
@@ -10,7 +12,9 @@ const PlanesCard = ({ product }) => {
       <div className="contentBx">  
       <h3>{product.title}</h3>
       <p className="priceP">{product.description}</p>
+      <Link to="contact" smooth={true} duration={1000}>
       <button className="buyP">Consultar</button>
+      </Link>
       </div> 
       </div>
   );

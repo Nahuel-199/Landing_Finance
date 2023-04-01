@@ -35,6 +35,11 @@ nav.active {
   width: 30%;
   font-size: 15px;
   margin-left: -14%;
+  color: #149dff;
+}
+
+.span_logo2{
+  display: none;
 }
 nav ul {
   display: flex;
@@ -118,6 +123,14 @@ nav .menu-btn,
 
   .span_logo{
     display: none;
+  }
+
+  .span_logo2{
+    display: block;
+    color: #149dff;
+    font-size: 20px;
+    margin-right: 50px;
+    font-weight: 600;
   }
 }
 

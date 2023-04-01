@@ -14,6 +14,7 @@
 
 .footer__title {
     text-align: center;
+    color: #6bbcfa;
     margin-bottom: var(--mb-2);
 }
 
@@ -34,18 +35,35 @@
     column-gap: 1.25rem;
 }
 
+.img_footer{
+    width: 7%;
+    position: absolute;
+    left: 36%;
+    margin-top: -28px;
+}
+
 .footer__social-link {
-    background-color: var(--title-color);
+    background-color: white;
     color: var(--container-color);
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
     display: inline-flex;
+    transform: scale(1.0, 1.0);
 }
 
 .footer__social-link:hover {
-    color: var(--title-color-dart);
+    transform: scale(1.2, 1.2);
 }
+
+.instagram{
+    background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  border-radius: 35%;
+    }
 
 .footer__copy {
     display: block;
@@ -63,9 +81,16 @@
     justify-content: center;
     }
 
+    .footer__title{
+        margin-left: 48px;
+    }
+    .img_footer{
+        width: 23%;
+        left: 13%;
+    }
    .footer__social-link {
     padding: 0.25rem;
     border-radius: 0.25rem;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
    }
 }

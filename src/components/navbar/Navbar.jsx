@@ -16,15 +16,16 @@ const Navbar = () => {
             <img src={logo} alt="logo" className='img_finance'/>
         </Link>
         <span className='span_logo'>ESTUDIOCEA conocimiento y experiencia aplicada</span>
+        <span className='span_logo2'>ESTUDIOCEA</span>
         <div className="menu-icons" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"} style={{color: "gray"}}></i>
       </div>
         <input className='menu-btn' type="checkbox" id="menu-btn" />
          <ul className={clicked ? "menu active" : "menu"}>
             <li><Link to="main" smooth={true} duration={1000}>Inicio</Link></li>
-            <li><Link to="parallax" smooth={true} duration={1000}>Servicios</Link></li>
-            <li><Link to="planes" smooth={true} duration={1000}>Nosotros</Link></li>
-            <li><Link to="about" smooth={true} duration={1000}>Clientes & Misión</Link></li>
+            <li><Link to="planes" smooth={true} duration={1000}>Servicios</Link></li>
+            <li><Link to="parallax" smooth={true} duration={1000}>Nosotros</Link></li>
+            <li><Link to="about" smooth={true} duration={1000}>Misión</Link></li>
             <li><Link to="contact" smooth={true} duration={1000}>Contacto</Link></li>
          </ul>
         </nav>

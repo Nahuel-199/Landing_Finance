@@ -9,7 +9,8 @@ import Planes from './components/planes/Planes';
 import ScrollUp from './components/scrollup/ScrollUp';
 import "./App.css";
 import Mision from './components/mision/Mision';
-import Nosotros from './components/nosotros/Nosotros';
+import Wsp from './components/wsp/Wsp';
+import Parallax2 from './components/parallax2/Parallax2';
 
 function App() {
 
@@ -18,11 +19,12 @@ function App() {
       <Navbar />
     <main className='main'>
       <Header />
+      <Wsp />
     <About />
     <Parallax />
     <Mision />
     <Planes />
-    <Nosotros />
+    <Parallax2 />
     <Contact />
     </main>
     <Footer />

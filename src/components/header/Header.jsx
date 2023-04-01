@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-scroll";
 import "./header.css"
 
 const Header = () => {
@@ -13,7 +14,11 @@ const Header = () => {
             <p className="details">
             Acompañando al cliente en el desarrollo de su actividad, brindando la mejor calidad de servicio
             </p>
-           
+            <div className="header-btns">
+            <Link to="contact" smooth={true} duration={1000}>
+              <button className='header-btn'>HACENOS TU CONSULTA</button>
+              </Link>
+            </div>
         </div>
     </div>
   )
