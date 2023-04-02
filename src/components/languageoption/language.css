@@ -1,0 +1,37 @@
+.container_language {
+  margin-right: 20px;
+  border: none;
+}
+
+.planet_icon {
+  font-size: 30px;
+  color: cornflowerblue;
+}
+
+.select_change {
+  width: 50px;
+  background: transparent;
+  border: transparent;
+  border-color: transparent;
+  color: gray;
+  position: absolute;
+  top: 28px;
+  right: 35px;
+  cursor: pointer;
+}
+
+select:focus {
+  border: none;
+}
+
+.options {
+  width: 30px;
+  background: transparent;
+}
+
+@media (max-width: 600px) {
+  .select_change{
+    right: 50px;
+    top: 23px;
+  }    
+}

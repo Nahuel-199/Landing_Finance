@@ -178,6 +178,7 @@ nav .menu-btn,
   }
   nav .menu-icons {
     display: flex;
+    margin-left: 80px;
   }
   nav .menu-icon .nav-icon {
     background-color: #ffffff;

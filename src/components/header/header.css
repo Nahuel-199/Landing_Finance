@@ -41,7 +41,7 @@
     width: 900px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -55%);
   }
   .header-heading span {
@@ -100,6 +100,7 @@
   
 
     .header-heading{
+      width: 100%;
       top: 58%;
     }
     .a-container {
@@ -107,17 +108,13 @@
     }
 
     .header-btns{
-      margin-left: -24%;
+      margin-left: 5%;
     }
   
     .a-box{
       width: 100%;
       height: 400px;
   }
-  
-    .header-heading {
-      width: 60%;
-    }
   
     .header-heading h1 {
       font-size: 2.2rem;

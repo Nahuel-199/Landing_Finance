@@ -3,6 +3,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../context";
+import { useTranslation } from "react-i18next";
 import "./contact.css";
 
 const Contact = () => {
@@ -13,6 +14,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [project, setProject] = useState("");
   const [phoneNo, setPhoneNo] = useState("");
+  const { t } = useTranslation();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -41,21 +43,24 @@ const Contact = () => {
     <section className="contact section" id="contact">
       <ToastContainer />
       <h2 style={{ color: "#fff" }} className="section__title">
-      Contáctese con nosotros
+        {t("Contáctese con nosotros")}
       </h2>
       <span className="section__subtitle"></span>
 
       <div className="contact__container container grid">
         <div className="contact_content">
           <h3 style={{ color: "#fff" }} className="contact__title">
-            Háblenos
+            {t("Háblenos")}
           </h3>
 
           <div className="contact__info">
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon" style={{color: "red"}}></i>
+              <i
+                className="bx bx-mail-send contact__card-icon"
+                style={{ color: "red" }}
+              ></i>
 
-              <h3 className="contact__card-title">Email</h3>
+              <h3 className="contact__card-title">{t("Email")}</h3>
               <span
                 style={{ color: darkMode && "rgb(34, 34, 34)" }}
                 className="contact__card-data"
@@ -69,15 +74,19 @@ const Contact = () => {
                 rel="noreferrer"
                 className="contact__button"
               >
-                Escríbenos{""}
+                {t("Escríbenos")}
+                {""}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon" style={{color: "red"}}></i>
+              <i
+                className="bx bx-mail-send contact__card-icon"
+                style={{ color: "red" }}
+              ></i>
 
-              <h3 className="contact__card-title">Email</h3>
+              <h3 className="contact__card-title">{t("Email")}</h3>
               <span
                 style={{ color: darkMode && "rgb(34, 34, 34)" }}
                 className="contact__card-data"
@@ -91,20 +100,23 @@ const Contact = () => {
                 rel="noreferrer"
                 className="contact__button"
               >
-                Escríbenos{" "}
+                {t("Escríbenos")}{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon" style={{color: "red"}}></i>
+              <i
+                className="bx bx-mail-send contact__card-icon"
+                style={{ color: "red" }}
+              ></i>
 
-              <h3 className="contact__card-title">Email</h3>
+              <h3 className="contact__card-title">{t("Email")}</h3>
               <span
                 style={{ color: darkMode && "rgb(34, 34, 34)" }}
                 className="contact__card-data"
               >
-                 Olivera.raul@estudiocea.com.ar
+                Olivera.raul@estudiocea.com.ar
               </span>
 
               <a
@@ -113,7 +125,7 @@ const Contact = () => {
                 rel="noreferrer"
                 className="contact__button"
               >
-                Escríbenos{" "}
+                {t("Escríbenos")}{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -122,7 +134,7 @@ const Contact = () => {
 
         <div className="contact__content">
           <h3 style={{ color: "#fff" }} className="contact__title">
-            Escríba su consulta
+            {t("Escríba su consulta")}
           </h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
@@ -131,7 +143,7 @@ const Contact = () => {
                 style={{ backgroundColor: darkMode && "rgb(34 34 34)" }}
                 className="contact__form-tag"
               >
-                Nombre
+                {t("Nombre")}
               </label>
               <input
                 style={{
@@ -142,7 +154,7 @@ const Contact = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="contact__form-input"
-                placeholder="Ponga su nombre"
+                placeholder={t("Ponga su nombre")}
                 required
               />
             </div>
@@ -152,7 +164,7 @@ const Contact = () => {
                 style={{ backgroundColor: darkMode && "rgb(34 34 34)" }}
                 className="contact__form-tag"
               >
-                Email
+                {t("Email")}
               </label>
               <input
                 style={{
@@ -163,7 +175,7 @@ const Contact = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="contact__form-input"
-                placeholder="Ponga su email"
+                placeholder={t("Ponga su email")}
                 required
               />
             </div>
@@ -173,7 +185,7 @@ const Contact = () => {
                 style={{ backgroundColor: darkMode && "rgb(34 34 34)" }}
                 className="contact__form-tag"
               >
-                Telefono
+                {t("Teléfono")}
               </label>
               <input
                 style={{
@@ -184,7 +196,7 @@ const Contact = () => {
                 value={phoneNo}
                 onChange={(e) => setPhoneNo(e.target.value)}
                 className="contact__form-input"
-                placeholder="Ponga su número de telefono"
+                placeholder={t("Ponga su número de teléfono")}
                 required
               />
             </div>
@@ -194,7 +206,7 @@ const Contact = () => {
                 style={{ backgroundColor: darkMode && "rgb(34 34 34)" }}
                 className="contact__form-tag"
               >
-                Consulta
+                {t("Consulta")}
               </label>
               <textarea
                 style={{
@@ -206,13 +218,16 @@ const Contact = () => {
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Ponga su consulta"
+                placeholder={t("Ponga su consulta")}
                 required
               ></textarea>
             </div>
 
-            <button className="button button--flex" style={{ background: "hsl(217.88deg 92.75% 62.16%)"}}>
-              Enviar mensaje
+            <button
+              className="button button--flex"
+              style={{ background: "hsl(217.88deg 92.75% 62.16%)" }}
+            >
+              {t("Enviar mensaje")}
               <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"

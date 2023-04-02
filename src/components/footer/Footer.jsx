@@ -1,41 +1,44 @@
 import React from "react";
 import logo from "../../assets/logoHeader2.png";
+import { useTranslation } from "react-i18next";
 import "./footer.css";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="footer__container container">
-      <img src={logo} alt="logo" className='img_footer'/>
+        <img src={logo} alt="logo" className="img_footer" />
         <h1 className="footer__title">ESTUDIOCEA</h1>
         <ul className="footer__list">
           <li>
             <a href="#about" className="footer__link">
-             Inicio
+              {t("Inicio")}
             </a>
           </li>
 
           <li>
             <a href="#Portfolio" className="footer__link">
-            Servicios
+              {t("Servicios")}
             </a>
           </li>
 
           <li>
             <a href="#Skills" className="footer__link">
-              Nosotros
+              {t("Nosotros")}
             </a>
           </li>
 
           <li>
             <a href="#Skills" className="footer__link">
-            Misión
+              {t("Vision")}
             </a>
           </li>
 
           <li>
             <a href="#Skills" className="footer__link">
-              Contacto
+              {t("Contacto")}
             </a>
           </li>
         </ul>
@@ -56,7 +59,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-         <i class='bx bxl-whatsapp' style={{color: "green"}}></i>
+            <i class="bx bxl-whatsapp" style={{ color: "green" }}></i>
           </a>
 
           <a
@@ -65,7 +68,10 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-           <i class='bx bxl-facebook-circle' style={{color: "#0000ffb0"}}></i>
+            <i
+              class="bx bxl-facebook-circle"
+              style={{ color: "#0000ffb0" }}
+            ></i>
           </a>
         </div>
       </div>
