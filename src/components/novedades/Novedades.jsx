@@ -5,13 +5,15 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./novedades.css";
+import { useTranslation } from "react-i18next";
 
 const Novedades = () => {
   const [items] = useState(Menu);
+  const { t } = useTranslation();
 
   return (
     <section className="work container section" id="proyectos">
-      <h2 className="section__title">Novedades</h2>
+      <h2 className="section__title">{t("Novedades")}</h2>
       <span className="section__subtitle"></span>
 
       <Swiper
@@ -44,7 +46,7 @@ const Novedades = () => {
               <a href={link} target="_blank" rel="noreferrer">
                 <img src={images} alt="" className="work__img" />
                 <button className="btn">
-                  <span>VISITAR</span>
+                  <span>{t("VISITAR")}</span>
                 </button>
               </a>
             </SwiperSlide>
