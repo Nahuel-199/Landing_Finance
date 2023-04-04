@@ -11,6 +11,7 @@ import Mision from './components/mision/Mision';
 import Wsp from './components/wsp/Wsp';
 import Parallax2 from './components/parallax2/Parallax2';
 import "./App.css";
+import Novedades from './components/novedades/Novedades';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
     <Planes />
     <Parallax2 />
     <Contact />
+    <Novedades />
     </main>
     <Footer />
     <ScrollUp />
