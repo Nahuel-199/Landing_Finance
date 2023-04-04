@@ -1,15 +1,17 @@
 .container_language {
   margin-right: 20px;
   border: none;
+  display: flex;
 }
 
-.planet_icon {
-  font-size: 30px;
-  color: cornflowerblue;
+.imgs_language{
+  width: 35px;
+  cursor: pointer;
+  margin: 0 7px;
 }
 
 .select_change {
-  width: 50px;
+  width: 90px;
   background: transparent;
   border: transparent;
   border-color: transparent;
@@ -26,12 +28,16 @@ select:focus {
 
 .options {
   width: 30px;
-  background: transparent;
+  background-image: url("../../assets/bandera1.png");
 }
 
 @media (max-width: 600px) {
-  .select_change{
-    right: 50px;
-    top: 23px;
-  }    
+  .container_language{
+    margin-left: -100px;
+  }
+
+  .imgs_language{
+    width: 30px;
+    margin: 0 2px;
+  }
 }

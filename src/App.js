@@ -7,10 +7,10 @@ import Footer from './components/footer/Footer';
 import Parallax from './components/parallax/Parallax';
 import Planes from './components/planes/Planes';
 import ScrollUp from './components/scrollup/ScrollUp';
-import "./App.css";
 import Mision from './components/mision/Mision';
 import Wsp from './components/wsp/Wsp';
 import Parallax2 from './components/parallax2/Parallax2';
+import "./App.css";
 
 function App() {
 

@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import logo from "../../assets/logoHeader2.png";
 import { Link } from "react-scroll";
 import { useTranslation } from 'react-i18next';
-import i18next from "i18next"
 import Languageoption from '../languageoption/Languageoption';
 import "./navbar.css"
 
@@ -13,10 +12,6 @@ const Navbar = () => {
     const handleClick = () => {
       setClicked(!clicked);
     };
-
-    const handleClick2=(e)=>{
-        i18next.changeLanguage(e.target.value)
-    }
 
   return (
     <nav>
@@ -36,7 +31,7 @@ const Navbar = () => {
             <li><Link to="about" smooth={true} duration={1000}>{t("Vision")}</Link></li>
             <li><Link to="contact" smooth={true} duration={1000}>{t("Contacto")}</Link></li>
          </ul>
-         <Languageoption onChange={(e)=> handleClick2(e)} />
+         <Languageoption />
         </nav>
   )
 }

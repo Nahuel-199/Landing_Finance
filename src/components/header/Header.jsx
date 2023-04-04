@@ -10,8 +10,8 @@ const Header = () => {
   return (
     <div id="main">
         <div className="header-heading">
-            <h2>{t("Conocimientos")}</h2>
-            <h1><span>{t("Experiencia")}</span></h1>
+            <h2>{t("Conocimiento")}</h2>
+            <h2><span>{t("Experiencia")}</span></h2>
             <h2>{t("Aplicada")}</h2>
             <p className="details">
                {t("Sólidos Conocimientos Técnicos")}

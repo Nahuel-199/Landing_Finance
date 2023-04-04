@@ -52,7 +52,7 @@
     color: #c5c5c5;
   }
   .header-heading h2 {
-    font-size: 2.7rem;
+    font-size: 4rem;
     margin: 0px;
     letter-spacing: 2px;
     color: #ffffff;
@@ -103,6 +103,11 @@
       width: 100%;
       top: 58%;
     }
+
+    .header-heading h2 {
+       font-size: 2.8rem;
+    }
+
     .a-container {
       flex-wrap: wrap;
     }
