@@ -17,7 +17,7 @@ const Parallax = () => {
           </button>
           <p className="text_parallax">
             {t(
-              " Estos tres valores implican una relación con el cliente que apuntan a desarrollar un trabajo en equipo cumpliendo cada uno su rol, para logar resultados de manera conjunta y apuntando a la satisfacción del cliente, donde toma también importancia la comunicación entre ambos."
+              "Estos tres valores implican una relación con el cliente que apuntan a desarrollar un trabajo en equipo cumpliendo cada uno su rol, para logar resultados de manera conjunta y apuntando a la satisfacción del cliente, donde toma también importancia la comunicación entre ambos."
             )}
           </p>
         </div>
