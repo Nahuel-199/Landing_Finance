@@ -17,7 +17,7 @@ const About = () => {
       </h2>
       <span className="section__subtitle">
         {t(
-          "En un contexto cambiante en el que la intervención del estado a través de su organismo recaudador y en su necesidad de financiamiento mediante la aplicación de tributos, vemos la importancia de estar asesorado al desarrollar una actividad ya que la misma involucra inversión de capital, trabajo y análisis de distintas variables, que permitirán tomar decisiones apuntando a maximizar los recursos de la empresa, además de poder reducir el impacto impositivo"
+          "En un contexto cambiante en el que la intervención del estado a través de su organismo recaudador y en su necesidad de financiamiento mediante la aplicación de tributos, vemos la importancia de estar asesorado al desarrollar una actividad ya que la misma involucra inversión de capital, trabajo y análisis de distintas variables, que permitirán tomar decisiones apuntando a maximizar los recursos de la empresa."
         )}
       </span>
       <div className="about__container container grid">

@@ -157,7 +157,6 @@
     }
 }
 
-/* For medium devices */
 @media screen and (max-width: 576px) {
     .contact__info {
         grid-template-columns: 1fr;
@@ -168,7 +167,7 @@
     }
 }
 
-/* For small devices */
+
 @media screen and (max-width: 350px) {
 
 }

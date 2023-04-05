@@ -86,8 +86,7 @@
  .work__description {
      font-size: var(--small-font-size);
  }
- 
- /* Swiper Class */
+
  .swiper-pagination-bullet {
      background-color: var(--text-color) !important;
  }

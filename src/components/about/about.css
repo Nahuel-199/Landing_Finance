@@ -55,8 +55,6 @@
     margin-bottom: var(--mb-2-5);
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For large devices */
 @media screen and (max-width: 992px) {
 
        .about__container {
@@ -86,7 +84,7 @@
        }
   }
   
-  /* For medium devices */
+
   @media screen and (max-width: 576px) {
 
     .about__info {
@@ -99,7 +97,7 @@
 
   }
 
-  /* For small devices */
+ 
   @media screen and (max-width: 350px) {
     .about__info {
         grid-template-columns: repeat(2, 1fr);
